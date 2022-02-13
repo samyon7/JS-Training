@@ -8,3 +8,7 @@ rs.on("data", (data) =>{
 rs.on("end", () => {
 	console.log("No more data.");
 });
+
+rs.on("data", (data) => {
+	console.log("Read chunk :",data.toString());
+});
